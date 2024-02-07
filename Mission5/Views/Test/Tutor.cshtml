@@ -4,17 +4,26 @@
 @{
     ViewData["Title"] = "Tutor Page";
 }
-<div>
-    <h2>Tutor Calculator</h2>
-
-    <form>
-        <label>Enter Number of Hours: </label>
+<div class="text-center">
+    <h2>Ski Class Cost Calculator</h2>
+    <br />
+    <form id="mainForm">
+        <label>Enter number of hours you would like to be instructed: </label>
         <br />
-        <input type="number" />
+        <input type="number" id="hours" />
         <br />
-        <label>Hourly Rate: </label>
         <br />
-        <input type="number" value="$500" readonly/>
-        <button>Calculate</button>
+        <br />
+        <label>Hourly rate I charge: </label>
+        <br />
+        <input id="hourlyRate" type="text" value="$500" readonly/>
+        <br />
+        <br />
+        <br />
+        <button>Calculate total cost of Ski classes</button>
+        <br />
     </form>
+    <div id="response"></div>
+    <img id="failGif"/>
+
 </div>
